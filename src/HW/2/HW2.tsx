@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import {UserList2} from './UserList2';
-import {CurrentUser} from "./CurrentUser";
+
 
 export type AddressType = {
     street: string;
@@ -50,8 +50,8 @@ export const HW2 = () => {
 
     const filterUsers = () => {
         const filteredUsers = users.myFriends.filter((user: UserType) => {
-            return (
-                user.address.city === "Los Angeles"
+            return   (
+              user.address.city === 'Los Angeles'
             )
         })
 
